@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Input</string>
+    <string name="textTitle">Food charges</string>
+    <string name="textHint">Cost of meal</string>
+    <string name="prompt">Select a tip</string>
+    <string-array name="textGroup">
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+    </string-array>
+    <string name="btnCalculate">Calculate</string>
+    <string name="imageDesc">Smiley</string>
+</resources>
+
