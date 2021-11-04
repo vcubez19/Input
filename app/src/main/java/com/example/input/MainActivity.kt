@@ -21,18 +21,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        // Id's
         val cost = findViewById<EditText>(R.id.idCost)
         val group = findViewById<Spinner>(R.id.spinnerGroup)
         val calc = findViewById<Button>(R.id.buttonCalculate)
         val output = findViewById<TextView>(R.id.output)
 
 
+        // On tap
         calc.setOnClickListener {
             costOfMeal = cost.text.toString().toDouble()
             val currency = DecimalFormat("$###,###.00")
 
 
-
+            // Set to 0.00
             totalCharges = 0.00
             when (group.selectedItem.toString()) {
                 "5%" -> totalCharges += costOfMeal + (costOfMeal / 10) / 2
@@ -45,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+            // Display
             val formatted = currency.format( totalCharges )
             output.text = "The cost is $formatted"
 
